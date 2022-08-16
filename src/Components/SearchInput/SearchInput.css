@@ -6,7 +6,6 @@
     border-radius: 50%;
     background-color: var(--clr-primary-neutral-000);
 }
-
 .search-form input::placeholder{
     font-weight: var(--w-medium);
 }

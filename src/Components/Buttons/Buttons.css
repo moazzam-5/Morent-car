@@ -1,15 +1,21 @@
 
 /* sizing */
-
+.bu-round.bu-sm{
+    padding: .5rem;
+}
 .bu-sm{
     padding: .25rem 1rem;
     font-size: .75rem;
 }
+
 .bu-sm .icon{
     height: .75rem;
     width: .75rem;
 }
 
+.bu-round.bu-med{
+    padding: .75rem;
+}
 .bu-med{
     padding: .5rem 1rem;
     font-size: .75rem;
@@ -18,7 +24,9 @@
     height: .875rem;
     width: .875rem;
 }
-
+.bu-round.bu-lg{
+    padding: 1rem;
+}
 .bu-lg{
     padding: 1rem 1.5rem;
     font-size: 1rem;

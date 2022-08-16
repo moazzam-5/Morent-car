@@ -1,11 +1,12 @@
 
 import './App.css';
-import { NavbarTop } from './Components/Navbar/Navigation';
+import { Footer, NavbarTop } from './Components/Navigation/Navigation';
 
 function App() {
   return (
     <div className="App">
       <NavbarTop></NavbarTop>
+      <Footer/>
     </div>
   );
 }
