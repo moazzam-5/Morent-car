@@ -1,19 +1,16 @@
 .top-nav{
-    padding: 2.5rem 2rem 2.5rem 3.75rem;
     border-bottom: 1px solid var(--clr-secondary-200);
 }
+/*
 .top-nav__right{
     margin-left: auto;
 }
 .top-nav__pfp{
-    height: 2.75rem;
-    width: 2.75rem;
+    height: 3rem;
+    width: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0);
 }
-
-.bottom-nav{
-    padding: 5rem 3.75rem;
-    border-bottom: 1px solid var(--clr-secondary-200);
-}
+*/
 
 .bottom-nav__col a , .bottom-nav__col a:visited{
     text-decoration: none;
@@ -23,9 +20,7 @@
     text-decoration: underline;
 }
 
-.legal{
-    padding: 1rem 3.75rem;
-}
+
 
 .legal a{
     font-weight: var(--w-bold);

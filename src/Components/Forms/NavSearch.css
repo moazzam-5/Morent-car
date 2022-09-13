@@ -1,4 +1,4 @@
-.search-form * {
+/*.search-form * {
     border: none;
 }
 
@@ -9,15 +9,14 @@
 .search-form input::placeholder{
     font-weight: var(--w-medium);
 }
-.search-form input:focus{
-    outline: none;
-}
-.search-form input{
-    min-width: 14rem;
-}
 
+
+*/
 .search-form {
     padding: .625rem 1.25rem;
     border-radius: 4.375rem;
     border: 1px solid var(--clr-secondary-200);
+}
+.search-form input:focus{
+    outline: none;
 }

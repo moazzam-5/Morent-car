@@ -1,10 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display:swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root{
   /* color system */
+  --clr-light-gray : #f6f7f9;
+  --clr-dark-gray :#1A202C;
+
+  --clr-neutral : #3D5278;
       /* accent */
   --clr-accent : #3563E9;
-  --clr-light-gray : #f6f7f9;
-  --clr-neutral : #3D5278;
+  --clr-accent-50 : #e7ecfc;
+  --clr-accent-100 : #c2d0f8;
+  --clr-accent-200 : #9ab1f4;
+  --clr-accent-300 : #7292f0;
+  --clr-accent-400 : #537aec;
+  --clr-accent-500 : #3563e9;
+  --clr-accent-600 : #305be6;
+  --clr-accent-700 : #2851e3;
+  --clr-accent-800 : #2247df;
+  --clr-accent-900 : #1635d9;
+  
       /* primary neutral */
   --clr-primary-neutral-900 : #1D1178;
   --clr-primary-neutral-800 : #2D1D92;
@@ -173,6 +189,13 @@ select {
 a,button{
   cursor: pointer;
 }
+a , a:active{
+  text-decoration: none;
+  color: var(--clr-accent-500);
+}
+a:hover,a:visited{
+  color: var(--clr-accent-500);
+}
 /* utility classes */
 
 /* colors */
@@ -192,10 +215,25 @@ a,button{
 
   /* text */
 
+.text-linethrough{
+  text-decoration: line-through;;
+}
+.text-center{
+  text-align: center;
+}
+
+.text-start{
+  text-align: start;
+}
+.text-end{
+  text-align: end;
+}
 .text-dark{
   color: var(--clr-secondary-500);
 }
-
+.text-almost-black {
+  color: var(--clr-dark-gray);
+}
 .text-light{
   color: var(--clr-secondary-300);
 }
@@ -267,48 +305,3 @@ a,button{
   font-size: var(--f-40);
 }
 
-
-/* display */
-
-  .flex-col{
-    display: flex;
-    flex-direction: column;
-  }
-  .flex-row{
-    display: flex;
-    flex-direction: row;
-  }
-
-  .flex-1{
-    flex: 1;
-  }
-  .wrap{
-    flex-wrap: wrap;
-  }
-  .gap-xs{
-    gap: .5rem;
-  }
-  .gap-sm{
-    gap: .75rem;
-  }
-  .gap-regular{
-    gap: 1rem;
-  }
-
-  .gap-lg{
-    gap:1.5rem;
-  }
-  .gap-xl{
-    gap : 2rem;
-  }
-  .gap-2xl{
-    gap: 4rem;
-  }
-
-  .align-center{
-    align-items: center;
-  }
-
-.round{
-  border-radius: 3.75rem;
-}

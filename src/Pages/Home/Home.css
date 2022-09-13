@@ -1,0 +1,8 @@
+
+.popular__container{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.popular__container::-webkit-scrollbar {
+    display: none;
+  }
