@@ -2,16 +2,14 @@ import "./HeroForm.css";
 import { useState } from "react";
 import { BuAccent, BuMinimal, BuSecondary } from "../Buttons/Buttons";
 import getIcon from "../../Helpers/IconsHelper";
-import { DatePickeModal, TimePickeModal } from "../Modals/Modals";
 
+//todo: write cleaner code
 export default function HeroForm(props) {
   const [formData, setFormData] = useState({
     selectedOption: {
       key: -1,
       value: "eg. Sport",
     },
-    selectedDate: undefined,
-    selectedTime: undefined,
   });
   const setSelectedOption = (opt) => {
     setFormData({ ...formData, selectedOption: opt });

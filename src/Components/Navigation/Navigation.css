@@ -1,5 +1,6 @@
-.top-nav{
-    border-bottom: 1px solid var(--clr-secondary-200);
+
+.search-wrapper[data-visible=true]{
+    top:0
 }
 /*
 .top-nav__right{

@@ -76,7 +76,7 @@ function SideBarFilter(props) {
   );
 }
 
-export function SearchPage(props) {
+export default function Search(props) {
     const [sidebarVisible,setSidebarVisible] = useState(false);
     const toggleSidbar = (prevState) =>{
         setSidebarVisible(!prevState)

@@ -3,17 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './Pages/Home/Home';
-import { SearchPage } from './Pages/Search/Search';
+import { BrowserRouter} from 'react-router-dom';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-      <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="search" element={<SearchPage />} />
-    </Routes>
+      <App/>
   </BrowserRouter>
 );
 

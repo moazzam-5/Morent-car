@@ -3,15 +3,23 @@ import { NavSearch } from "../Forms/NavSearch";
 import avatar from "../../assets/avatar.png"
 import "./Navigation.css";
 import getIcon from "../../Helpers/IconsHelper";
+import { useState } from "react";
 
 
 export function NavbarTop(){
+    const [searchVisible,setSearchVisible] = useState(false);
+    const toggleSearch = (prevstate) =>{
+        setSearchVisible(!prevstate);
+    }
     return (
-        <nav className=" top-nav md:px-16 md:py-8 px-4 py-3 bg-white flex items-center gap-3 md:gap-5">
-            <BuSecondary className=" p-2 rounded-md md:hidden flex" LeftIcon={getIcon("search")}/>
+        <nav className=" top-nav md:px-16 md:py-8 px-4 py-3 bg-white flex items-center gap-3 md:gap-5 border-b border-b-secondary-200">
+            <BuSecondary className=" p-2 rounded-md md:hidden flex" LeftIcon={getIcon("search")} onClick={()=>{toggleSearch(searchVisible)}} />
 
             <p className="logo fw-bold md:text-3xl text-2xl text-accent">MORENT</p>
-            <NavSearch className="min-w-0 hidden md:flex"/>
+            <div data-visible={searchVisible} className="search-wrapper bg-white px-4 py-3 md:p-0 w-full flex gap-4 items-center justify-start fixed -top-full right-0 md:static">
+                <NavSearch className="min-w-0 md:flex flex-1 md:flex-none"/>
+                <BuMinimal LeftIcon={getIcon("close")} className="h-4 w-4 md:hidden flex" onClick={()=>{toggleSearch(searchVisible)}}/>
+            </div>
                 <ul className="top-nav__buttons flex gap-3 md:gap-5 ml-auto items-center">
                     <li><BuMinimal className="p-1 md:w-8  rounded-full" LeftIcon={getIcon("heart")}/></li>
                     <li><BuMinimal className = "p-1 nav-buttons__notification  rounded-full" LeftIcon={getIcon("bell")}/></li>

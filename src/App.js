@@ -1,17 +1,13 @@
-
-import './App.css';
-import { Footer, NavbarTop } from './Components/Navigation/Navigation';
-import Home from './Pages/Home/Home';
-import { SearchPage } from './Pages/Search/Search';
-
+import "./App.css";
+import Home from "./Pages/Home/Home";
+import Search from "./Pages/Search/Search";
+import { Route, Routes } from 'react-router-dom';
 function App() {
   return (
-    <div className="App">
-      
-      {/*<SearchPage></SearchPage>*/}
-      <Home></Home>
-      
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="search" element={<Search />} />
+    </Routes>
   );
 }
 
