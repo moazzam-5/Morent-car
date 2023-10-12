@@ -2,7 +2,7 @@ import car_0 from "../assets/cars/car_0.png";
 import car_1 from "../assets/cars/car_1.png";
 import car_2 from "../assets/cars/car_2.png";
 import car_3 from "../assets/cars/car_3.png";
-import car_4 from "../assets/cars/car_4.png";
+import car_4 from "../assets/cars/Car_4.png";
 import car_5 from "../assets/cars/car_5.png";
 import car_6 from "../assets/cars/car_6.png";
 
