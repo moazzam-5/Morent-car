@@ -19,7 +19,7 @@ export function ScrollDisplay() {
       <div
         onMouseDown={onMouseDown}
         ref={ref}
-        className="scrollable flex flex-row gap-6 overflow-scroll scroll"
+        className="scrollable grid grid-cols-4 gap-6 overflow-scroll scroll"
       >
         {getCarArray(4).map((car, index) => (
           <CatalogueCard car={car} key={index} />
@@ -33,8 +33,8 @@ export function GridDisplay() {
   return (
     <section className="flex flex-col gap-4 mt-6">
       <p className="text-light">Recommended</p>
-      <div className=" grid grid-cols-[repeat(auto-fit,_minmax(18rem,_1fr))] gap-6">
-        {getCarArray(10).map((car, index) => (
+      <div className=" grid grid-cols-4 gap-6">
+        {getCarArray(8).map((car, index) => (
           <CatalogueCard car={car} key={index} />
         ))}
       </div>

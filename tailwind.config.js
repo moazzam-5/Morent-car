@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      backgroundImage: () => ({
+        addLeft: "url('../src/assets/Ads-1.png')",
+      }),
       colors: {
         white: "#ffffff",
         accent: {
